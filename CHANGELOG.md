@@ -1,3 +1,13 @@
+# 1.0.0
+
+## Chore
+
+- Transfer ownership to [Beta Gouv](https://github.com/betagouv)
+- Fixes in `pyproject.toml`:
+  - drop deprecated `license` dictionnary in favor of `license-files`
+  - drop `build`, `setuptools` and `twine` packages in favor of `uv`
+- Release as stable
+
 # 0.0.3
 
 ## Fixes

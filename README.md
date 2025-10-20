@@ -1,5 +1,3 @@
-from dj_importmap.settings import INSTALLED_APPS
-
 # dj-importmap: HTML importmaps like a boss!
 
 `dj-importmaps` is designed to help you declare your [`importmap`s](https://developer.mozilla.org/fr/docs/Web/HTML/Element/script/type/importmap)
@@ -126,3 +124,11 @@ argument:
 <!-- Ok -->
 {% importmap "--" "defer" %}
 ```
+
+## Dev
+
+### Release
+
+To perform a release, fill the [CHANGELOG.md](.CHANGELOG.md) with changes, and update [package's `__version__`](importmap/__init__.py).
+Open a new PR with these changes. When merge, you can publish [a new release on Github](https://github.com/betagouv/dj-importmap/releases/new).
+Then you can publish on PyPI with `uv build` and `uv publish`.
